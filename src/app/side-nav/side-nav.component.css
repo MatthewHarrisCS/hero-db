@@ -1,0 +1,28 @@
+.menu {
+    background: grey;
+    width: 70px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    color: darkgrey;
+}
+
+.button {
+    fill: darkgrey;
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+    overflow: visible;
+    
+}
+
+.button:hover {
+    cursor: pointer;
+    stroke: lightgrey;
+    stroke-width: 5%;
+}
+
+.text:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
