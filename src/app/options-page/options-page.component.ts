@@ -12,4 +12,8 @@ export class OptionsPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  switchNav() {
+    console.log("Switching nav");
+  }
+
 }

@@ -1,0 +1,31 @@
+.menu {
+    background: green;
+    text-align: center;
+    position: fixed;
+    top: 8px;
+}
+
+.buffer {
+    padding-bottom: 8px;
+}
+
+.button {
+    fill: whitesmoke;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    overflow: visible;
+    
+}
+
+.button:hover {
+    cursor: pointer;
+    stroke: whitesmoke;
+    stroke-width: 5%;
+}
+
+.text:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
+

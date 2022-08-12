@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { OptionsPageComponent } from './options-page/options-page.component';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OptionsPageComponent } from './options-page/options-page.component';
     SideNavComponent,
     HomePageComponent,
     SearchPageComponent,
-    OptionsPageComponent
+    OptionsPageComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
