@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavService } from '../nav.service';
 
 @Component({
   selector: 'app-options-page',
@@ -7,13 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptionsPageComponent implements OnInit {
 
-  constructor() { }
+  useTopNav = true;
 
-  ngOnInit(): void {
-  }
+  constructor(private navService: NavService) {}
+
+  ngOnInit(): void {}
 
   switchNav() {
-    console.log("Switching nav");
+    if (this.useTopNav) {
+      console.log("true!");
+      this.useTopNav = false;
+      this.navService.setNav(false);
+    } else {
+      console.log("false!");
+      this.useTopNav = true;
+      this.navService.setNav(true);
+    }
   }
-
 }

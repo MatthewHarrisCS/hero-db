@@ -8,6 +8,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { OptionsPageComponent } from './options-page/options-page.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { NavService } from './nav.service';
+import { MainNavComponent } from './main-nav/main-nav.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,14 @@ import { TopNavComponent } from './top-nav/top-nav.component';
     HomePageComponent,
     SearchPageComponent,
     OptionsPageComponent,
-    TopNavComponent
+    TopNavComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
