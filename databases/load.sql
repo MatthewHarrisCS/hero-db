@@ -1,0 +1,105 @@
+INSERT INTO crew VALUES ("Robert", "Downey Jr.", "1965-04-04", "M");
+INSERT INTO actor VALUES ("Robert", "Downey Jr.");
+INSERT INTO crew VALUES ("Chris", "Evans", "1981-06-13", "M");
+INSERT INTO actor VALUES ("Chris", "Evans");
+INSERT INTO crew VALUES ("Scarlett", "Johansson", "1984-11-22", "F");
+INSERT INTO actor VALUES ("Scarlett", "Johansson");
+INSERT INTO crew VALUES ("Jeremy", "Renner", "1971-01-07", "M");
+INSERT INTO actor VALUES ("Jeremy", "Renner");
+INSERT INTO crew VALUES ("Hailee", "Steinfeld", "1996-12-11", "F");
+INSERT INTO actor VALUES ("Hailee", "Steinfeld");
+INSERT INTO crew VALUES ("Michael", "Keaton", "1951-09-05", "M");
+INSERT INTO actor VALUES ("Michael", "Keaton");
+INSERT INTO crew VALUES ("Adam", "West", "1928-09-19", "M");
+INSERT INTO actor VALUES ("Adam", "West");
+
+INSERT INTO crew VALUES ("John", "Favreau", "1966-10-19", "M");
+INSERT INTO director VALUES ("John", "Favreau");
+INSERT INTO crew VALUES ("Anthony", "Russo", "1970-02-03", "M");
+INSERT INTO director VALUES ("Anthony", "Russo");
+INSERT INTO crew VALUES ("Joe", "Russo", "1971-07-18", "M");
+INSERT INTO director VALUES ("Joe", "Russo");
+INSERT INTO crew VALUES ("Shane", "Black", "1961-12-16", "M");
+INSERT INTO director VALUES ("Shane", "Black");
+INSERT INTO crew VALUES ("Tim", "Burton", "1958-08-25", "M");
+INSERT INTO director VALUES ("Tim", "Burton");
+INSERT INTO crew VALUES ("Amber", "Templemore-Finlayson", "", "F");
+INSERT INTO director VALUES ("Amber", "Templemore-Finlayson");
+INSERT INTO crew VALUES ("Katie", "Ellwood", "", "F");
+INSERT INTO director VALUES ("Katie", "Ellwood");
+INSERT INTO crew VALUES ("Rhys", "Thomas", "1979-09-18", "M");
+INSERT INTO director VALUES ("Rhys", "Thomas");
+
+INSERT INTO project VALUES ("Iron Man", "2008-05-02", "Paramount", "MCU");
+INSERT INTO movie VALUES ("Iron Man", "2008-05-02");
+INSERT INTO project VALUES ("Iron Man 2", "2010-05-07", "Paramount", "MCU");
+INSERT INTO movie VALUES ("Iron Man 2", "2010-05-07");
+INSERT INTO project VALUES ("Iron Man 3", "2013-05-03", "Disney", "MCU");
+INSERT INTO movie VALUES ("Iron Man 3", "2013-05-03");
+INSERT INTO project VALUES ("Avengers: Infinity War", "2018-04-27", "Disney", "MCU");
+INSERT INTO movie VALUES ("Avengers: Infinity War", "2018-04-27");
+INSERT INTO project VALUES ("Avengers: Endgame", "2019-04-26", "Disney", "MCU");
+INSERT INTO movie VALUES ("Avengers: Endgame", "2019-04-26");
+INSERT INTO project VALUES ("Batman", "1989-06-23", "Warner Bros.", "Batman 89");
+INSERT INTO movie VALUES ("Batman", "1989-06-23");
+
+INSERT INTO project VALUES ("Hawkeye", "2021-11-24", "Disney", "MCU");
+INSERT INTO show VALUES ("Hawkeye", "2021-11-24");
+INSERT INTO project VALUES ("Batman", "1966-01-12", "Warner Bros.", "Batman 66");
+INSERT INTO show VALUES ("Batman", "1966-01-12");
+
+INSERT INTO movie_director VALUES ("John", "Favreau", "Iron Man", "2008-05-02");
+INSERT INTO movie_director VALUES ("John", "Favreau", "Iron Man 2", "2010-05-07");
+INSERT INTO movie_director VALUES ("Shane", "Black", "Iron Man 3", "2013-05-03");
+INSERT INTO movie_director VALUES ("Joe", "Russo", "Avengers: Infinity War", "2018-04-27");
+INSERT INTO movie_director VALUES ("Anthony", "Russo", "Avengers: Infinity War", "2018-04-27");
+INSERT INTO movie_director VALUES ("Joe", "Russo", "Avengers: Endgame", "2019-04-26");
+INSERT INTO movie_director VALUES ("Anthony", "Russo", "Avengers: Endgame", "2019-04-26");
+INSERT INTO movie_director VALUES ("Tim", "Burton", "Batman", "1989-06-23");
+
+INSERT INTO episode VALUES ("Hawkeye", "2021-11-24", 1, 1, "Never Meet Your Heroes");
+INSERT INTO episode VALUES ("Hawkeye", "2021-11-24", 1, 2, "Hide and Seek");
+INSERT INTO episode VALUES ("Hawkeye", "2021-11-24", 1, 3, "Echoes");
+INSERT INTO episode VALUES ("Hawkeye", "2021-11-24", 1, 4, "Partners, Am I Right?");
+INSERT INTO episode VALUES ("Hawkeye", "2021-11-24", 1, 5, "Ronin");
+INSERT INTO episode VALUES ("Hawkeye", "2021-11-24", 1, 6, "So This Is Christmas?");
+
+INSERT INTO episode_director VALUES ("Rhys", "Thomas", "Hawkeye", "2021-11-24", 1, 1);
+INSERT INTO episode_director VALUES ("Rhys", "Thomas", "Hawkeye", "2021-11-24", 1, 2);
+INSERT INTO episode_director VALUES ("Amber", "Templemore-Finlayson", "Hawkeye", "2021-11-24", 1, 3);
+INSERT INTO episode_director VALUES ("Katie", "Ellwood", "Hawkeye", "2021-11-24", 1, 3);
+INSERT INTO episode_director VALUES ("Amber", "Templemore-Finlayson", "Hawkeye", "2021-11-24", 1, 4);
+INSERT INTO episode_director VALUES ("Katie", "Ellwood", "Hawkeye", "2021-11-24", 1, 4);
+INSERT INTO episode_director VALUES ("Amber", "Templemore-Finlayson", "Hawkeye", "2021-11-24", 1, 5);
+INSERT INTO episode_director VALUES ("Katie", "Ellwood", "Hawkeye", "2021-11-24", 1, 5);
+INSERT INTO episode_director VALUES ("Rhys", "Thomas", "Hawkeye", "2021-11-24", 1, 6);
+
+INSERT INTO character VALUES ("Tony Stark", "Iron Man");
+INSERT INTO character VALUES ("Steve Rogers", "Captain America");
+INSERT INTO character VALUES ("Natasha Romanoff", "Black Widow");
+INSERT INTO character VALUES ("Clint Barton", "Hawkeye");
+INSERT INTO character VALUES ("Kate Bishop", "Hawkeye");
+INSERT INTO character VALUES ("Bruce Wayne", "Batman");
+
+INSERT INTO character_power VALUES ("Tony Stark", "Flight");
+INSERT INTO character_power VALUES ("Tony Stark", "Super Strength");
+INSERT INTO character_power VALUES ("Tony Stark", "Lasers");
+INSERT INTO character_power VALUES ("Steve Rogers", "Super Strength");
+INSERT INTO character_power VALUES ("Steve Rogers", "Vibranium Shield");
+INSERT INTO character_power VALUES ("Clint Barton", "Archery");
+INSERT INTO character_power VALUES ("Kate Bishop", "Archery");
+
+INSERT INTO plays VALUES ("Robert", "Downey Jr.", "Tony Stark", "Iron Man", "2008-05-02");
+INSERT INTO plays VALUES ("Robert", "Downey Jr.", "Tony Stark", "Iron Man 2", "2010-05-07");
+INSERT INTO plays VALUES ("Robert", "Downey Jr.", "Tony Stark", "Iron Man 3", "2013-05-03");
+INSERT INTO plays VALUES ("Robert", "Downey Jr.", "Tony Stark", "Avengers: Infinity War", "2018-04-27");
+INSERT INTO plays VALUES ("Robert", "Downey Jr.", "Tony Stark", "Avengers: Endgame", "2019-04-26");
+INSERT INTO plays VALUES ("Scarlett", "Johansson", "Natasha Romanoff", "Avengers: Infinity War", "2018-04-27");
+INSERT INTO plays VALUES ("Scarlett", "Johansson", "Natasha Romanoff", "Avengers: Endgame", "2019-04-26");
+INSERT INTO plays VALUES ("Chris", "Evans", "Steve Rogers", "Avengers: Infinity War", "2018-04-27");
+INSERT INTO plays VALUES ("Chris", "Evans", "Steve Rogers", "Avengers: Endgame", "2019-04-26");
+INSERT INTO plays VALUES ("Jeremy", "Renner", "Clint Barton", "Avengers: Endgame", "2019-04-26");
+INSERT INTO plays VALUES ("Jeremy", "Renner", "Clint Barton", "Hawkeye", "2021-11-24");
+INSERT INTO plays VALUES ("Hailee", "Steinfeld", "Kate Bishop", "Hawkeye", "2021-11-24");
+INSERT INTO plays VALUES ("Michael", "Keaton", "Bruce Wayne", "Batman", "1989-06-23");
+INSERT INTO plays VALUES ("Adam", "West", "Bruce Wayne", "Batman", "1966-01-12");
