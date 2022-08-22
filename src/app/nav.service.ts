@@ -8,6 +8,7 @@ export class NavService {
 
   // when false, uses side nav instead
   private useTopNav: BehaviorSubject<boolean>;
+  private sideNavMaxed: BehaviorSubject<boolean>;
 
   getNav() {
     return this.useTopNav.asObservable();
@@ -17,7 +18,16 @@ export class NavService {
     this.useTopNav.next(change);
   }
 
+  getMax() {
+    return this.sideNavMaxed.asObservable();
+  }
+
+  setMax(change: boolean): void {
+    this.sideNavMaxed.next(change);
+  }
+
   constructor() { 
     this.useTopNav = new BehaviorSubject<boolean>(false);
+    this.sideNavMaxed = new BehaviorSubject<boolean>(true);
   }
 }

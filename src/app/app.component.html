@@ -1,2 +1,9 @@
-<app-main-nav></app-main-nav>
+<div *ngIf="useTopNav; else useSideNav">
+    <app-top-nav></app-top-nav>
+</div>
+<ng-template #useSideNav>
+    <app-side-nav></app-side-nav>
+</ng-template>
+<div [ngClass]="sideNavMaxed()">
 <router-outlet></router-outlet>
+</div>

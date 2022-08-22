@@ -5,6 +5,7 @@
     border-radius: 8px;
     text-align: center;
     color: darkgrey;
+    position: fixed;
 }
 
 .logo {
@@ -44,4 +45,8 @@
 .text:hover {
     cursor: pointer;
     color: lightgrey;
+}
+
+.max {
+
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavService } from './nav.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularProj1';
+  title = 'Hero-DB';
 
+  useTopNav = true;
+  expanded = true;
+
+  constructor(private navService: NavService) {}
+
+  ngOnInit(): void {
+    this.navService.getNav().subscribe((value) => {this.useTopNav = value});
+    this.navService.getMax().subscribe((value) => {this.expanded = value});
+  }
+
+  sideNavMaxed() {
+    if (!this.useTopNav && this.expanded) {
+      return 'maximizedSide';
+    } else {
+      return '';
+    }
+  }
 }

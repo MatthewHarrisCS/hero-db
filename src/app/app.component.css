@@ -1,3 +1,5 @@
-.mainPage {
-    background: red;
+.maximizedSide {
+    max-width: calc(100% - 90px);
+    position: relative;
+    left: 90px;
 }

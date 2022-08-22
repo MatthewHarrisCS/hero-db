@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NavService } from '../nav.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -9,18 +10,22 @@ export class SideNavComponent implements OnInit {
 
   expanded = true;
 
-  constructor() {
-  }
+  constructor(private navService: NavService) {}
 
   ngOnInit(): void {
+    this.navService.getMax().subscribe((value) => {this.expanded = value});
   }
 
-  minimize() {
-    this.expanded = false;
+  ngOnDestroy(): void {
+    this.navService.setMax(true);
   }
 
   expand() {
-    this.expanded = true;
+    this.navService.setMax(true);
+  }
+  
+  minimize() {
+    this.navService.setMax(false);
   }
 
 }
