@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPageComponent implements OnInit {
 
+  noDb = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  ngOnDestroy(): void {
+
   }
 
 }

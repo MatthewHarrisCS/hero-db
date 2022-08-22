@@ -18,6 +18,6 @@ export class NavService {
   }
 
   constructor() { 
-    this.useTopNav = new BehaviorSubject<boolean>(true);
+    this.useTopNav = new BehaviorSubject<boolean>(false);
   }
 }

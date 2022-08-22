@@ -12,16 +12,14 @@ export class OptionsPageComponent implements OnInit {
 
   constructor(private navService: NavService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.navService.getNav().subscribe((value) => {this.useTopNav = value});
+  }
 
   switchNav() {
     if (this.useTopNav) {
-      console.log("true!");
-      this.useTopNav = false;
       this.navService.setNav(false);
     } else {
-      console.log("false!");
-      this.useTopNav = true;
       this.navService.setNav(true);
     }
   }

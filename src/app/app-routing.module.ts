@@ -5,7 +5,7 @@ import { OptionsPageComponent } from './options-page/options-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
   { path: 'options', component: OptionsPageComponent },
   { path: 'search', component: SearchPageComponent }
 ];
