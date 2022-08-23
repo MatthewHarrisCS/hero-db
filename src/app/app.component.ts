@@ -20,8 +20,8 @@ export class AppComponent {
   }
 
   sideNavMaxed() {
-    if (!this.useTopNav && this.expanded) {
-      return 'maximizedSide';
+    if (this.expanded && !this.useTopNav) {
+      return 'expandedSide';
     } else {
       return '';
     }

@@ -1,0 +1,44 @@
+.body {
+    text-align: center;
+    height: 350px;
+    margin-top:-46px;
+    background-image: url(src\assets\stacked-steps-haikei.svg);
+}
+
+.header {
+    color:black;
+    position: relative;
+    top: 100px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 56px;
+    line-height: 10px;
+}
+
+.header button {
+    background: lightgrey;
+    font-size: large;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: transparent;
+    box-shadow: 0px 1px 2px black;
+    height: 40px;
+    width: 80px;
+}
+
+.header button:hover {
+    background: #403e3f;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

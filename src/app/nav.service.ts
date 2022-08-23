@@ -27,7 +27,7 @@ export class NavService {
   }
 
   constructor() { 
-    this.useTopNav = new BehaviorSubject<boolean>(false);
+    this.useTopNav = new BehaviorSubject<boolean>(true);
     this.sideNavMaxed = new BehaviorSubject<boolean>(true);
   }
 }
