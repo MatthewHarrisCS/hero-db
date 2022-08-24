@@ -1,17 +1,17 @@
 .menu {
-    background:dimgrey;
+    background:#403e3f;
     width: 70px;
     padding: 5px;
     border-radius: 8px;
     text-align: center;
-    color: darkgrey;
+    color: whitesmoke;
     position: fixed;
     z-index: 1;
     top: 8px;
 }
 
 .logo {
-    fill: darkgrey;
+    fill: whitesmoke;
     height: 50px;
     width: 50px;
     margin-bottom: -12px;
@@ -19,6 +19,7 @@
 }
 
 .logo-text {
+    color: whitesmoke;
     font-style: italic;
     font-weight: bold;
     font-size:25px;
@@ -29,7 +30,7 @@
 }
 
 .button {
-    fill: darkgrey;
+    fill: whitesmoke;
     height: 40px;
     width: 40px;
     margin: 15px;
@@ -39,11 +40,12 @@
 
 .button:hover {
     cursor: pointer;
-    stroke: lightgrey;
+    stroke: whitesmoke;
     stroke-width: 5%;
 }
 
 .text:hover {
     cursor: pointer;
-    color: lightgrey;
+    color: white;
+    font-weight: bold;
 }
