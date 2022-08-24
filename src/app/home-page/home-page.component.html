@@ -1,10 +1,20 @@
-<div class = "body toEdge">
-    <div class = "header">
+<div class="body toEdge">
+    <div class="header">
         <h1>Welcome to Hero-DB</h1>
             <p>Here you can search our vast database of characters, cast and crew 
             <br/>from your favorite superhero movies and television series</p>
         <button routerLink="/search" routerLinkActive="active">Search</button>
     </div>
 </div>
-<div class="container">
+
+<h1 class="container toEdge">Featured Films</h1>
+<div class="container toEdge">
+    <div class="content-card" *ngFor="let movie of movies"
+        routerLink="/search" routerLinkActive="active">
+        <h1> {{movie.title}}</h1>
+        <p>Directed by {{movie.first_name}} {{movie.last_name}}
+            <br/>Released {{movie.release_date | date:'mediumDate'}}
+        </p>
+        Read More
+    </div>
 </div>

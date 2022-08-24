@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavService } from './nav.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class AppComponent {
   useTopNav = true;
   expanded = true;
 
-  constructor(private navService: NavService) {}
+  constructor(private navService: NavService, private route: Router) {}
 
   ngOnInit(): void {
     this.navService.getNav().subscribe((value) => {this.useTopNav = value});
@@ -20,7 +21,7 @@ export class AppComponent {
   }
 
   sideNavMaxed() {
-    if (this.expanded && !this.useTopNav) {
+    if (this.expanded && !this.useTopNav && this.route.url != "/") {
       return 'expandedSide';
     } else {
       return '';

@@ -6,6 +6,8 @@
     text-align: center;
     color: darkgrey;
     position: fixed;
+    z-index: 1;
+    top: 8px;
 }
 
 .logo {
@@ -15,7 +17,6 @@
     margin-bottom: -12px;
     overflow: visible;
 }
-
 
 .logo-text {
     font-style: italic;
