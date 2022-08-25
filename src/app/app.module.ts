@@ -9,6 +9,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { OptionsPageComponent } from './options-page/options-page.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { NavService } from './nav.service';
+import { PrivacyPageComponent } from './privacy-page/privacy-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavService } from './nav.service';
     HomePageComponent,
     SearchPageComponent,
     OptionsPageComponent,
-    TopNavComponent
+    TopNavComponent,
+    PrivacyPageComponent
   ],
   imports: [
     BrowserModule,

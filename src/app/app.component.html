@@ -1,3 +1,4 @@
+
 <div *ngIf="useTopNav; else useSideNav">
     <app-top-nav></app-top-nav>
 </div>
@@ -7,4 +8,10 @@
 
 <div [ngClass]="sideNavMaxed()">
     <router-outlet></router-outlet>
+</div>
+
+<div class="footer toEdge">
+    <span routerLink="/privacy" routerLinkActive="active">
+        Privacy Policy
+    </span>
 </div>

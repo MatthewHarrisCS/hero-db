@@ -5,6 +5,8 @@ html {
     color: whitesmoke;
     height: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: table;
+    width: 100%;
 }
 
 .toEdge {

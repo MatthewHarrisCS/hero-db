@@ -3,6 +3,7 @@
     text-align: center;
     position: fixed;
     top: 8px;
+    z-index: 1;
 }
 
 .buffer {
@@ -47,4 +48,3 @@
     stroke: whitesmoke;
     stroke-width: 5%;
 }
-

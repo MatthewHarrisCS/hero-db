@@ -1,5 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content:space-between;
+}
+
 .expandedSide {
     max-width: calc(100% - 90px);
     position: relative;
     left: 90px;
+}
+
+.footer {
+    background-color: #403e3f;
+    margin-bottom: -8px;
+    margin-top: 18px;
+    overflow-x: hidden;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer span {
+    cursor: pointer;
 }

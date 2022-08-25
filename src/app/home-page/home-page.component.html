@@ -12,9 +12,18 @@
     <div class="content-card" *ngFor="let movie of movies"
         routerLink="/search" routerLinkActive="active">
         <h1> {{movie.title}}</h1>
-        <p>Directed by {{movie.first_name}} {{movie.last_name}}
+        <p>Directed by {{movie.name}}
             <br/>Released {{movie.release_date | date:'mediumDate'}}
         </p>
-        Read More
+    </div>
+</div>
+
+<h1 class="container toEdge">Featured Show: {{episodes[0].title}}</h1>
+<div class="container toEdge">
+    <div class="content-card" *ngFor="let episode of episodes"
+        routerLink="/search" routerLinkActive="active">
+        <h1> {{episode.episode_title}}</h1>
+        <p>Episode {{episode.episode}}
+            <br/>Directed by {{episode.name}}</p>
     </div>
 </div>

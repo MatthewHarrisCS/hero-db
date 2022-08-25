@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MOVIE_DIRECTOR } from 'src/temp-db';
+import { MOVIE_CONTENT_CARD, TV_CONTENT_CARD } from 'src/temp-db';
 
 @Component({
   selector: 'app-home-page',
@@ -8,7 +8,8 @@ import { MOVIE_DIRECTOR } from 'src/temp-db';
 })
 export class HomePageComponent implements OnInit {
 
-  movies = MOVIE_DIRECTOR;
+  movies = MOVIE_CONTENT_CARD;
+  episodes = TV_CONTENT_CARD;
 
   constructor() { }
 
