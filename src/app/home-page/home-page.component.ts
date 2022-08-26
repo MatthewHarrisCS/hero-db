@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { nameToUrl } from '../shared-functions';
 import { MOVIE_CONTENT_CARD, TV_CONTENT_CARD } from 'src/temp-db';
 
 @Component({
@@ -12,6 +13,10 @@ export class HomePageComponent implements OnInit {
   episodes = TV_CONTENT_CARD;
 
   constructor() { }
+
+  toUrl(title: String) {
+    return nameToUrl(title);
+  }
 
   ngOnInit(): void {
   }

@@ -10,6 +10,7 @@ import { OptionsPageComponent } from './options-page/options-page.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { NavService } from './nav.service';
 import { PrivacyPageComponent } from './privacy-page/privacy-page.component';
+import { FourOFourComponent } from './four-o-four/four-o-four.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PrivacyPageComponent } from './privacy-page/privacy-page.component';
     SearchPageComponent,
     OptionsPageComponent,
     TopNavComponent,
-    PrivacyPageComponent
+    PrivacyPageComponent,
+    FourOFourComponent
   ],
   imports: [
     BrowserModule,
